@@ -1,6 +1,8 @@
 const express = require("express")
 const bodyParser = require("body-parser")
 
+const mongoose = require("mongoose")
+
 const app = express()
 
 app.use(bodyParser.json())
@@ -21,3 +23,4 @@ app.use((error, req, res, next) => {
     res.status(error.code || 500);
     res.json({ message: error.message || "an unknown error occured" });
 });
+
