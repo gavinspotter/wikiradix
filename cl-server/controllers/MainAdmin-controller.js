@@ -11,4 +11,9 @@ const login = async (req, res, next) => {
 
 }
 
-const createAdmin = async (req, res, next) => { }
+const createAdmin = async (req, res, next) => {
+
+    const { name, password } = req.body
+
+
+}
