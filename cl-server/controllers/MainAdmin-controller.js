@@ -30,7 +30,7 @@ const createAdmin = async (req, res, next) => {
 
 }
 
-const login = async (req, res, next) => {
+const adminlogin = async (req, res, next) => {
 
     const { name, password } = req.body
 
@@ -56,4 +56,6 @@ const login = async (req, res, next) => {
 
 }
 
+
+exports.adminlogin = adminlogin
 exports.createAdmin = createAdmin
