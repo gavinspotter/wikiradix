@@ -2,8 +2,8 @@ const HttpError = require("../models/HttpError")
 
 const MainAdmin = require("../models/MainAdmin")
 
-const login = async (req, res, next) => {
-    const { name, password } = req.body
+const createAdmin = async (req, res, next) => {
+
 
 
     const createdAdmin = new MainAdmin({
@@ -17,18 +17,22 @@ const login = async (req, res, next) => {
     } catch (err) {
         const error = new HttpError("couldnt save admin", 500)
         return next(error)
+
+
     }
 
 
-
+    res.status(201).json({ user: createdAdmin })
 
 
 }
 
-const createAdmin = async (req, res, next) => {
+const login = async (req, res, next) => {
 
     const { name, password } = req.body
 
 
 
 }
+
+exports.createAdmin = createAdmin
