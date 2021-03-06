@@ -12,6 +12,9 @@ const createAdmin = async (req, res, next) => {
     })
 
 
+
+
+
     try {
         await createdAdmin.save()
     } catch (err) {
