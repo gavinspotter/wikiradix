@@ -12,6 +12,12 @@ const login = async (req, res, next) => {
     })
 
 
+    try {
+        await createdAdmin.save()
+    } catch (err) {
+        const error = new HttpError("couldnt save admin", 500)
+        return next(error)
+    }
 
 
 
