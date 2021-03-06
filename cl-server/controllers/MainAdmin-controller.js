@@ -1,4 +1,5 @@
 const HttpError = require("../models/HttpError")
+const mongoose = require("mongoose")
 
 const MainAdmin = require("../models/MainAdmin")
 
@@ -48,6 +49,19 @@ const adminlogin = async (req, res, next) => {
         )
         return next(error)
     }
+
+
+    try {
+        await MainAdmin.updateMany({},
+            { $set: { "new_field": 1 } },
+            {
+                upsert: true,
+                multi: false
+            })
+    } catch (err) {
+
+    }
+
 
     res.json({
         message: "logged in",
