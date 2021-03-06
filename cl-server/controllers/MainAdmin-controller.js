@@ -38,7 +38,8 @@ const adminlogin = async (req, res, next) => {
     try {
         existingUser = await MainAdmin.findOne({ name: name })
     } catch (err) {
-        const error = new HttpError("couldnt find email in our database", 500)
+        const error = new HttpError("couldnt find name in our database", 500)
+        return next(error)
     }
     if (!existingUser || existingUser.password !== password) {
         const error = new HttpError(
