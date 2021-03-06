@@ -10,6 +10,8 @@ const app = express()
 app.use(bodyParser.json())
 
 
+app.use("/api/admin", adminRoutes)
+
 
 
 app.use((req, res, next) => {
