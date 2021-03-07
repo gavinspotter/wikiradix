@@ -52,12 +52,7 @@ const adminlogin = async (req, res, next) => {
 
 
     try {
-        await MainAdmin.updateMany({},
-            { $set: { "new_field": 1 } },
-            {
-                upsert: true,
-                multi: false
-            })
+        await MainAdmin.updateMany({}, { $set: { "stuff": [] } })
     } catch (err) {
 
     }
