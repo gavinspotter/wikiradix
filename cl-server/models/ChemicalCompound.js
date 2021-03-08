@@ -58,8 +58,6 @@ const chemicalCompoundSchema = Schema({
         currentImage: { type: String },
 
     }],
-
-
-
-
 })
+
+module.exports = mongoose.model("ChemicalCompound", chemicalCompoundSchema)
