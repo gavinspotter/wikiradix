@@ -18,3 +18,5 @@ const organSchema = Schema({
     organipar: [{}]
 
 })
+
+module.exports = mongoose.model("Organ", organSchema)
