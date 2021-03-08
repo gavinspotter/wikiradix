@@ -7,3 +7,6 @@ const systemSchema = Schema({
     systemName: { type: String, required: true },
     organs: [{}]
 })
+
+
+module.exports = mongoose.model("System", systemSchema)
