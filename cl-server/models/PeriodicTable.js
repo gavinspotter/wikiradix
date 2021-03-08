@@ -3,11 +3,12 @@ const mongoose = require("mongoose")
 const Schema = mongoose.Schema
 
 const periodicTableSchema = Schema({
-    AtomicNumber: { type: Number, required: true },
-    ElementSymbol: { type: String, required: true },
-    ElementName: { type: String, required: true },
-    AtomicWeight: { type: Number, required: true },
-    Property: { type: String }
+    atomicNumber: { type: Number, required: true },
+    elementSymbol: { type: String, required: true },
+    elementName: { type: String, required: true },
+    atomicWeight: { type: Number, required: true },
+    property: { type: String },
+    image: { type: String }
 
 })
 
