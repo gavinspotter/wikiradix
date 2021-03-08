@@ -18,3 +18,4 @@ const organiparSchema = Schema({
     cell: [{}]
 })
 
+module.exports = mongoose.model("Organipar", organiparSchema)
