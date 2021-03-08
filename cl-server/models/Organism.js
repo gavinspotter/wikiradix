@@ -9,3 +9,4 @@ const organismSchema = Schema({
 
 })
 
+module.exports = mongoose.model("Organism", organismSchema)
