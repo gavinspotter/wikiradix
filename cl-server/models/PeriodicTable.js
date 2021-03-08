@@ -11,3 +11,4 @@ const periodicTableSchema = Schema({
 
 })
 
+module.exports = mongoose.model("PeriodicTable", periodicTableSchema)
