@@ -14,7 +14,8 @@ const celluelSchema = Schema({
         currentImage: { type: String },
 
     }],
-    organelle: { type: String }
+    organelle: { type: String },
+    chemicalCompounds: [{}]
 })
 
 module.exports = mongoose.model("Celluel", celluelSchema)
