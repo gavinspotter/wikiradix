@@ -16,3 +16,5 @@ const celluelSchema = Schema({
     }],
     organelle: { type: String }
 })
+
+module.exports = mongoose.model("Celluel", celluelSchema)
