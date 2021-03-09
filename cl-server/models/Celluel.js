@@ -15,7 +15,7 @@ const celluelSchema = Schema({
 
     }],
     organelle: { type: String },
-    chemicalCompounds: [{}]
+    chemicalCompounds: [{ type: mongoose.Types.ObjectId, ref: "chemicalCompound" }]
 })
 
 module.exports = mongoose.model("Celluel", celluelSchema)
