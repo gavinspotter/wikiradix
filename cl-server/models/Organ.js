@@ -15,8 +15,8 @@ const organSchema = Schema({
 
     }],
     system: { type: mongoose.Types.ObjectId, ref: "System" },
-    organipars: [{ type: mongoose.Types.ObjectId, ref: "Organipar" }]
-
+    organipars: [{ type: mongoose.Types.ObjectId, ref: "Organipar" }],
+    disorders: [{ type: mongoose.Types.ObjectId, ref: "Disorder" }]
 })
 
 module.exports = mongoose.model("Organ", organSchema)
