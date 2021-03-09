@@ -5,7 +5,7 @@ const Schema = mongoose.Schema
 const organismSchema = Schema({
     name: { type: String, required: true },
     scientificName: { type: String, required: true },
-    Systems: [{}],
+    Systems: [{ type: mongoose.Types.ObjectId, ref: "System" }],
 
 })
 

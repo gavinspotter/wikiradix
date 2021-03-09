@@ -14,8 +14,8 @@ const organiparSchema = Schema({
         currentImage: { type: String },
 
     }],
-    organ: {},
-    cell: [{}]
+    organ: { type: mongoose.Types.ObjectId, ref: "Organ" },
+    cells: [{ type: mongoose.Types.ObjectId, ref: "Cell" }]
 })
 
 module.exports = mongoose.model("Organipar", organiparSchema)

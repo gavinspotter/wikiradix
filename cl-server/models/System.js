@@ -14,7 +14,8 @@ const systemSchema = Schema({
         currentImage: { type: String },
 
     }],
-    organs: [{}]
+    organism: { type: mongoose.Types.ObjectId, ref: "Organism" },
+    organs: [{ type: mongoose.Types.ObjectId, ref: "Organ" }]
 })
 
 

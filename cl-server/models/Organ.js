@@ -14,8 +14,8 @@ const organSchema = Schema({
         currentImage: { type: String },
 
     }],
-    system: {},
-    organipar: [{}]
+    system: { type: mongoose.Types.ObjectId, ref: "System" },
+    organipars: [{ type: mongoose.Types.ObjectId, ref: "Organipar" }]
 
 })
 

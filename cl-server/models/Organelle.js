@@ -14,6 +14,6 @@ const organelleSchema = Schema({
         currentImage: { type: String },
 
     }],
-    cell: {},
-    celluel: [{}]
+    cell: { type: mongoose.Types.ObjectId, ref: "Cell" },
+    celluels: [{ type: mongoose.Types.ObjectId, ref: "Celluel" }]
 })
