@@ -81,11 +81,6 @@ const disorderSchema = Schema({
 
         }],
     }],
-
-
-
-
-
-
-
 })
+
+module.exports = mongoose.model("Disorder", disorderSchema)
