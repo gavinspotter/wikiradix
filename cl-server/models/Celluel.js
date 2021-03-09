@@ -15,7 +15,23 @@ const celluelSchema = Schema({
 
     }],
     organelle: { type: mongoose.Types.ObjectId, ref: "Organelle" },
-    chemicalCompounds: [{ type: mongoose.Types.ObjectId, ref: "ChemicalCompound" }],
+    chemicalCompounds: {
+
+        composure: [{ type: mongoose.Types.ObjectId, ref: "ChemicalCompound" }],
+        foreignMolecule: [{ type: mongoose.Types.ObjectId, ref: "ChemicalCompound" }, {
+            changeInCell: [
+                {
+                    renditions: [{
+                        imageString: { type: String },
+                        date: { type: Date }
+                    }],
+                    currentImage: { type: String },
+                    celluelTectonicStep: { type: Number }
+
+                }]
+        }
+        ]
+    },
     disorders: [{ type: mongoose.Types.ObjectId, ref: "Disorder" }]
 })
 

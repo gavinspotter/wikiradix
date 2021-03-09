@@ -14,6 +14,23 @@ const systemSchema = Schema({
         currentImage: { type: String },
 
     }],
+    chemicalCompounds: {
+
+        composure: [{ type: mongoose.Types.ObjectId, ref: "ChemicalCompound" }],
+        foreignMolecule: [{ type: mongoose.Types.ObjectId, ref: "ChemicalCompound" }, {
+            changeInCell: [
+                {
+                    renditions: [{
+                        imageString: { type: String },
+                        date: { type: Date }
+                    }],
+                    currentImage: { type: String },
+                    celluelTectonicStep: { type: Number }
+
+                }]
+        }
+        ]
+    },
     organism: { type: mongoose.Types.ObjectId, ref: "Organism" },
     organs: [{ type: mongoose.Types.ObjectId, ref: "Organ" }],
     disorders: [{ type: mongoose.Types.ObjectId, ref: "Disorder" }]

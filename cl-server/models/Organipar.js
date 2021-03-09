@@ -14,6 +14,23 @@ const organiparSchema = Schema({
         currentImage: { type: String },
 
     }],
+    chemicalCompounds: {
+
+        composure: [{ type: mongoose.Types.ObjectId, ref: "ChemicalCompound" }],
+        foreignMolecule: [{ type: mongoose.Types.ObjectId, ref: "ChemicalCompound" }, {
+            changeInCell: [
+                {
+                    renditions: [{
+                        imageString: { type: String },
+                        date: { type: Date }
+                    }],
+                    currentImage: { type: String },
+                    celluelTectonicStep: { type: Number }
+
+                }]
+        }
+        ]
+    },
     organ: { type: mongoose.Types.ObjectId, ref: "Organ" },
     cells: [{ type: mongoose.Types.ObjectId, ref: "Cell" }],
     disorders: [{ type: mongoose.Types.ObjectId, ref: "Disorder" }]
