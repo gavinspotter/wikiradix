@@ -32,7 +32,8 @@ const celluelSchema = Schema({
         }
         ]
     },
-    disorders: [{ type: mongoose.Types.ObjectId, ref: "Disorder" }]
+    disorders: [{ type: mongoose.Types.ObjectId, ref: "Disorder" }],
+    etymology: [{ type: mongoose.Types.ObjectId, ref: "Etymology" }]
 })
 
 module.exports = mongoose.model("Celluel", celluelSchema)

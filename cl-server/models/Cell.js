@@ -32,5 +32,6 @@ const cellSchema = Schema({
     },
     organipar: [{ type: mongoose.Types.ObjectId, ref: "Organipar" }],
     organelles: [{ type: mongoose.Types.ObjectId, ref: "Organelle" }],
-    disorders: [{ type: mongoose.Types.ObjectId, ref: "Disorder" }]
+    disorders: [{ type: mongoose.Types.ObjectId, ref: "Disorder" }],
+    etymology: [{ type: mongoose.Types.ObjectId, ref: "Etymology" }]
 })

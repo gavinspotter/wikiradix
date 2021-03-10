@@ -8,8 +8,8 @@ const periodicTableSchema = Schema({
     elementName: { type: String, required: true },
     atomicWeight: { type: Number, required: true },
     property: { type: String },
-    image: { type: String }
-
+    image: { type: String },
+    etymology: [{ type: mongoose.Types.ObjectId, ref: "Etymology" }]
 })
 
 module.exports = mongoose.model("PeriodicTable", periodicTableSchema)

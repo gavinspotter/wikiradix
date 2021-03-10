@@ -58,6 +58,7 @@ const chemicalCompoundSchema = Schema({
         currentImage: { type: String },
 
     }],
+    etymology: [{ type: mongoose.Types.ObjectId, ref: "Etymology" }]
 })
 
 module.exports = mongoose.model("ChemicalCompound", chemicalCompoundSchema)

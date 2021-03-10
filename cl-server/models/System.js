@@ -1,4 +1,5 @@
 const mongoose = require("mongoose")
+const Etymology = require("./Etymology")
 
 
 const Schema = mongoose.Schema
@@ -33,7 +34,8 @@ const systemSchema = Schema({
     },
     organism: { type: mongoose.Types.ObjectId, ref: "Organism" },
     organs: [{ type: mongoose.Types.ObjectId, ref: "Organ" }],
-    disorders: [{ type: mongoose.Types.ObjectId, ref: "Disorder" }]
+    disorders: [{ type: mongoose.Types.ObjectId, ref: "Disorder" }],
+    etymology: [{ type: mongoose.Types.ObjectId, ref: "Etymology" }]
 })
 
 

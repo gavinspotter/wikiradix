@@ -81,6 +81,7 @@ const disorderSchema = Schema({
 
         }],
     }],
+    etymology: [{ type: mongoose.Types.ObjectId, ref: "Etymology" }]
 })
 
 module.exports = mongoose.model("Disorder", disorderSchema)
