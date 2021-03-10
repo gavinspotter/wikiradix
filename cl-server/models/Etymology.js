@@ -8,3 +8,5 @@ const etymologySchema = Schema({
     language: { type: String }
 
 })
+
+module.exports = mongoose.model("Etymology", etymologySchema)
