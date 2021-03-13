@@ -17,6 +17,7 @@ const organiparSchema = Schema({
             license: { type: String }
         }],
         currentImage: { type: String },
+        caption: { type: String },
 
     }],
     chemicalCompounds: {
@@ -32,6 +33,7 @@ const organiparSchema = Schema({
                         license: { type: String }
                     }],
                     currentImage: { type: String },
+                    caption: { type: String },
                     celluelTectonicStep: { type: Number }
 
                 }]

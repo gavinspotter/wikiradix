@@ -17,6 +17,7 @@ const chemicalCompoundSchema = Schema({
         }],
         currentImage: { type: String },
 
+
     }],
     skeletalFormula: [{
         renditions: [{

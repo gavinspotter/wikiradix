@@ -17,6 +17,7 @@ const celluelSchema = Schema({
             license: { type: String }
         }],
         currentImage: { type: String },
+        caption: { type: String },
 
     }],
     organelle: { type: mongoose.Types.ObjectId, ref: "Organelle" },
@@ -33,6 +34,7 @@ const celluelSchema = Schema({
                         license: { type: String }
                     }],
                     currentImage: { type: String },
+                    caption: { type: String },
                     celluelTectonicStep: { type: Number }
 
                 }]

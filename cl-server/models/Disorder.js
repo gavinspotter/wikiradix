@@ -16,6 +16,7 @@ const disorderSchema = Schema({
             license: { type: String }
         }],
         currentImage: { type: String },
+        caption: { type: String },
 
     }],
 
@@ -30,6 +31,7 @@ const disorderSchema = Schema({
                 license: { type: String }
             }],
             currentImage: { type: String },
+            caption: { type: String },
 
         }],
     }
@@ -45,6 +47,7 @@ const disorderSchema = Schema({
                 license: { type: String }
             }],
             currentImage: { type: String },
+            caption: { type: String },
 
         }],
     }],
@@ -58,6 +61,7 @@ const disorderSchema = Schema({
                 license: { type: String }
             }],
             currentImage: { type: String },
+            caption: { type: String },
 
         }],
     }],
@@ -71,6 +75,7 @@ const disorderSchema = Schema({
                 license: { type: String }
             }],
             currentImage: { type: String },
+            caption: { type: String },
 
         }],
     }],
@@ -83,6 +88,7 @@ const disorderSchema = Schema({
                 license: { type: String }
             }],
             currentImage: { type: String },
+            caption: { type: String },
 
         }],
     }],
@@ -95,6 +101,7 @@ const disorderSchema = Schema({
                 license: { type: String }
             }],
             currentImage: { type: String },
+            caption: { type: String },
 
         }],
     }],

@@ -19,6 +19,7 @@ const systemSchema = Schema({
             license: { type: String }
         }],
         currentImage: { type: String },
+        caption: { type: String },
 
     }],
     chemicalCompounds: {
@@ -34,6 +35,7 @@ const systemSchema = Schema({
                         license: { type: String }
                     }],
                     currentImage: { type: String },
+                    caption: { type: String },
                     celluelTectonicStep: { type: Number }
 
                 }]
