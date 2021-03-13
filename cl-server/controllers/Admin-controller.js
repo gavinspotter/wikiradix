@@ -6,3 +6,6 @@ const Admin = require("../models/Admin")
 const requestAdmindPermission = async (req, res, next) => {
 
 }
+
+
+exports.requestAdmindPermission = requestAdmindPermission
