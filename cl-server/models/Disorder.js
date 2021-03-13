@@ -4,8 +4,10 @@ const Schema = mongoose.Schema
 
 const disorderSchema = Schema({
     name: { type: String, required: true },
-    description: { type: String },
-    references: [{ type: String }],
+    description: [{
+        statement: { type: String },
+        refrence: { type: String }
+    }],
     image: [{
         renditions: [{
             imageString: { type: String },

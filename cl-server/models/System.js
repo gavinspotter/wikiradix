@@ -6,7 +6,11 @@ const Schema = mongoose.Schema
 
 const systemSchema = Schema({
     systemName: { type: String, required: true },
-    description: { type: String },
+    description: [{
+        statement: { type: String },
+        refrence: { type: String }
+    }],
+
     image: [{
         renditions: [{
             imageString: { type: String },

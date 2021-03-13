@@ -5,7 +5,10 @@ const Schema = mongoose.Schema
 
 const organSchema = Schema({
     name: { type: String, required: true },
-    discription: { type: String, required: true },
+    discription: [{
+        statement: { type: String },
+        refrence: { type: String }
+    }],
     image: [{
         renditions: [{
             imageString: { type: String },

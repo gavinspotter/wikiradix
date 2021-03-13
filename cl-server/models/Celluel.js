@@ -5,7 +5,10 @@ const Schema = mongoose.Schema
 
 const celluelSchema = Schema({
     name: { type: String, required: true },
-    description: { type: String },
+    description: [{
+        statement: { type: String },
+        refrence: { type: String }
+    }],
     image: [{
         renditions: [{
             imageString: { type: String },
