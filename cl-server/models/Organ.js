@@ -9,7 +9,9 @@ const organSchema = Schema({
     image: [{
         renditions: [{
             imageString: { type: String },
-            date: { type: Date }
+            date: { type: Date },
+            reference: { type: String },
+            license: { type: String }
         }],
         currentImage: { type: String },
 
@@ -22,7 +24,9 @@ const organSchema = Schema({
                 {
                     renditions: [{
                         imageString: { type: String },
-                        date: { type: Date }
+                        date: { type: Date },
+                        reference: { type: String },
+                        license: { type: String }
                     }],
                     currentImage: { type: String },
                     celluelTectonicStep: { type: Number }

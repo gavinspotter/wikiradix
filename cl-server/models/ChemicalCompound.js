@@ -7,10 +7,13 @@ const chemicalCompoundSchema = Schema({
     name: { type: String, required: true },
     condensedFormula: { type: String },
     description: { type: String },
+    refrences: [{ type: String }],
     lewisStructure: [{
         renditions: [{
             imageString: { type: String },
-            date: { type: Date }
+            date: { type: Date },
+            reference: { type: String },
+            license: { type: String }
         }],
         currentImage: { type: String },
 
@@ -18,7 +21,9 @@ const chemicalCompoundSchema = Schema({
     skeletalFormula: [{
         renditions: [{
             imageString: { type: String },
-            date: { type: Date }
+            date: { type: Date },
+            reference: { type: String },
+            license: { type: String }
         }],
         currentImage: { type: String },
 
@@ -26,7 +31,9 @@ const chemicalCompoundSchema = Schema({
     perspectiveDrawings: [{
         renditions: [{
             imageString: { type: String },
-            date: { type: Date }
+            date: { type: Date },
+            reference: { type: String },
+            license: { type: String }
         }],
         currentImage: { type: String },
 
@@ -35,7 +42,9 @@ const chemicalCompoundSchema = Schema({
     conformation: [{
         renditions: [{
             imageString: { type: String },
-            date: { type: Date }
+            date: { type: Date },
+            reference: { type: String },
+            license: { type: String }
         }],
         currentImage: { type: String },
 
@@ -44,7 +53,9 @@ const chemicalCompoundSchema = Schema({
     haworth: [{
         renditions: [{
             imageString: { type: String },
-            date: { type: Date }
+            date: { type: Date },
+            reference: { type: String },
+            license: { type: String }
         }],
         currentImage: { type: String },
 
@@ -53,7 +64,9 @@ const chemicalCompoundSchema = Schema({
     fischer: [{
         renditions: [{
             imageString: { type: String },
-            date: { type: Date }
+            date: { type: Date },
+            reference: { type: String },
+            license: { type: String }
         }],
         currentImage: { type: String },
 

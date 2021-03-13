@@ -9,7 +9,9 @@ const cellSchema = Schema({
     image: [{
         renditions: [{
             imageString: { type: String },
-            date: { type: Date }
+            date: { type: Date },
+            reference: { type: String },
+            license: { type: String }
         }],
         currentImage: { type: String },
 
@@ -21,7 +23,9 @@ const cellSchema = Schema({
                 {
                     renditions: [{
                         imageString: { type: String },
-                        date: { type: Date }
+                        date: { type: Date },
+                        reference: { type: String },
+                        license: { type: String }
                     }],
                     currentImage: { type: String },
                     cellTectonicStep: { type: Number }

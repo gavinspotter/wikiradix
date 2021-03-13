@@ -5,10 +5,13 @@ const Schema = mongoose.Schema
 const disorderSchema = Schema({
     name: { type: String, required: true },
     description: { type: String },
+    references: [{ type: String }],
     image: [{
         renditions: [{
             imageString: { type: String },
-            date: { type: Date }
+            date: { type: Date },
+            reference: { type: String },
+            license: { type: String }
         }],
         currentImage: { type: String },
 
@@ -20,7 +23,9 @@ const disorderSchema = Schema({
         image: [{
             renditions: [{
                 imageString: { type: String },
-                date: { type: Date }
+                date: { type: Date },
+                reference: { type: String },
+                license: { type: String }
             }],
             currentImage: { type: String },
 
@@ -33,7 +38,9 @@ const disorderSchema = Schema({
         image: [{
             renditions: [{
                 imageString: { type: String },
-                date: { type: Date }
+                date: { type: Date },
+                reference: { type: String },
+                license: { type: String }
             }],
             currentImage: { type: String },
 
@@ -44,7 +51,9 @@ const disorderSchema = Schema({
         image: [{
             renditions: [{
                 imageString: { type: String },
-                date: { type: Date }
+                date: { type: Date },
+                reference: { type: String },
+                license: { type: String }
             }],
             currentImage: { type: String },
 
@@ -55,7 +64,9 @@ const disorderSchema = Schema({
         image: [{
             renditions: [{
                 imageString: { type: String },
-                date: { type: Date }
+                date: { type: Date },
+                reference: { type: String },
+                license: { type: String }
             }],
             currentImage: { type: String },
 
@@ -65,7 +76,9 @@ const disorderSchema = Schema({
         image: [{
             renditions: [{
                 imageString: { type: String },
-                date: { type: Date }
+                date: { type: Date },
+                reference: { type: String },
+                license: { type: String }
             }],
             currentImage: { type: String },
 
@@ -75,7 +88,9 @@ const disorderSchema = Schema({
         image: [{
             renditions: [{
                 imageString: { type: String },
-                date: { type: Date }
+                date: { type: Date },
+                reference: { type: String },
+                license: { type: String }
             }],
             currentImage: { type: String },
 
