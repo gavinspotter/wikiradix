@@ -66,6 +66,8 @@ const adminlogin = async (req, res, next) => {
 
 }
 
+const createAdmin = async (req, res, next) => { }
+
 
 exports.adminlogin = adminlogin
 exports.createAdmin = createAdmin
