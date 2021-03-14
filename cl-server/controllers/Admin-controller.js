@@ -24,6 +24,12 @@ const requestAdminPermission = async (req, res, next) => {
         return next(error)
     }
 
+    if (existingUser) {
+        const error = new HttpError(
+            "user already exists",
+            422
+        )
+    }
 
 
 
