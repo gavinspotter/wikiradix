@@ -6,10 +6,10 @@ const MainAdmin = require("../models/MainAdmin")
 
 const requestAdminPermission = async (req, res, next) => {
 
-    req.body = {
+    const {
         username,
         password
-    }
+    } = req.body
 
 
 
