@@ -12,7 +12,13 @@ const requestAdminPermission = async (req, res, next) => {
         password
     } = req.body
 
+    let existingUser
 
+    try {
+
+    } catch (err) {
+
+    }
 
 
 
