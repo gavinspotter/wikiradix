@@ -8,7 +8,7 @@ const organismSchema = Schema({
     Systems: [{ type: mongoose.Types.ObjectId, required: true, ref: "System" }],
     disorders: [{ type: mongoose.Types.ObjectId, required: true, ref: "Disorder" }],
     etymology: [{ type: mongoose.Types.ObjectId, required: true, ref: "Etymology" }],
-    species: [{ type: mongoose.Types.ObjectId }]
+    genus: { type: mongoose.Types.ObjectId, ref: "Genus" }
 })
 
 module.exports = mongoose.model("Organism", organismSchema)
