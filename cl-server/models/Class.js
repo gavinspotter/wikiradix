@@ -2,10 +2,11 @@ const mongoose = require("mongoose")
 
 const Schema = mongoose.Schema
 
-const domainSchema = Schema({
+const classSchema = Schema({
     name: { type: String, required: true },
     description: { type: String },
-    kingdoms: [{ type: mongoose.Types.ObjectId, required: true }]
+    order: [{ type: mongoose.Types.ObjectId, required: true, ref: "Order" }],
+    phylum: { type: mongoose.Types.ObjectId, ref: "Phylum" }
 })
 
-module.exports = mongoose.model("Domain", domainSchema)
+module.exports = mongoose.model("Class", classSchema)
