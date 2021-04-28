@@ -5,6 +5,8 @@ const HttpError = require("./models/HttpError")
 const mongoose = require("mongoose")
 
 const adminRoutes = require("./routes/MainAdmin-routes")
+const userRoutes = require("./routes/User-route")
+
 
 const app = express()
 
@@ -12,6 +14,8 @@ app.use(bodyParser.json())
 
 
 app.use("/api/admin", adminRoutes)
+
+app.use("/api/user", userRoutes)
 
 
 
